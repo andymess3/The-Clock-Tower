@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html ng-app="ui.bootstrap.demo" lang="en">
+	<head>
+		<title>
+			What the Monk?
+		</title>
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">	
+		<link rel = "stylesheet" type = "text/css" href = "clocktower.css">
+		<link rel = "stylesheet" type = "text/css" href = "clockface.css">
+	</head>
+
+	<body>
+
+		<!-- jumbotron -->  
+
+		<div class = "container-full">
+			<div class = "row">
+				<div class = "col-lg-12 text-center v-center">
+					<h1>
+						What the Monk?
+					</h1>
+					<p class = "lead">
+						A way to keep up with when and what the monastic community is praying. 
+					</p>		
+				</div>
+			</div>
+			
+			<!-- clock -->
+
+			<div id = "clockDisplay" class = "clockStyle"></div>	
+
+
+		</div>	
+
+		<br><br><br>
+
+		<!-- main body -->
+
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-6">
+					<div class = "panel panel-info">
+						<div class = "panel-heading text-center">
+							<h2>
+								Vigils
+							</h2>
+						</div>
+						<div class = "panel-body">
+							<h2 class = "text-center">
+								The Night Watch begins at 3:00 am.
+							</h2>
+							<br>
+							<h4 class = "bg-info">
+								Opening Prayer: 
+							</h4>
+							<h5>	
+								My soul yearns for you, O God. I keep vigil with you through the night.<br><br>In this sacred darkness I sit in silence. Open in this moment, I trust in the darkness. Waiting in trust, growning in trust. Waiting and trusting the sacred darkness. I surrender. I surrender. I surrender.
+							</h5>
+							<h4>
+								Psalm: 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+42" target = "_blank">42</a>, 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+63" target = "_blank">63</a> or 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+119:145-152" target = "_blank"> 119.145 - 152</a>
+							</h4>
+							<h4 class = "bg-info">
+								Closing Prayer:
+							</h4>	 
+							<h5 id = "vigils">
+								Generating Closing Prayer
+							</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "panel panel-success">
+						<div class = "panel-heading text-center">
+							<h2>
+								Lauds 
+							</h2>	
+						</div>
+						<div class = "panel-body">
+							<h2 class = "text-center">
+								The Awakening Hour begins at 6:00 am.
+							</h2>
+							<br>
+							<h4 class = "bg-success">
+								Opening Prayer: 
+							</h4>
+							<h5>	
+								Set the clock of your heart for dawn's arrival. Taste the joy of being awake.<br><br>The golden cradle of the moon is rising in the east, and all the things that croak and hoot and howl at night are silent now. Moment before dawn, quietest of all quiet moments, good medicine for the soul, make plans to be there. Set the clock of your heart, breathe in the rays of dawn, raise high the chalise of your life, taste the joy of being awake.<br><br>O medicine of dawn! O healing morning drink! O new light from the skies! O reason for my praise!
+							</h5>
+							<h4>
+								Psalm: 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+19" target = "_blank">19</a>, 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+95" target = "_blank">95</a> or 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+147"target = "_blank">147</a>
+							</h4>
+							<h4 class = "bg-success">
+								Closing Prayer:
+							</h4>	 
+							<h5 id = "lauds">
+								Generating Closing Prayer
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+			<!-- New Row -->
+
+		<div class = "container">
+			<div class "row">
+				<div class = "col-md-6">
+					<div class = "panel panel-warning">
+						<div class = "panel-heading text-center">
+							<h2>
+								Terce 
+							</h2>	
+						</div>
+						<div class = "panel-body">
+							<h2 class = "text-center">
+								The Blessing Hour begins at 9:00 am.
+							</h2>
+							<br>
+							<h4 class = "bg-warning">
+								Opening Prayer: 
+							</h4>
+							<h5>	
+								O Spirit of the Circling Hours. Work through me that I may be your love poured out.<br><br>Blessings. Blessings. Blessings as the day unfolds, blessings of the morning, pausing in the fullness of the moment, our grateful hearts. Sing a morning song on this holy ground. Sing a morning song to precious life all around.<br><br>Blessings. Blessings. Blessings of the rising sun, blessings of the morning, pausing in the fullness of the moment, our grateful hearts. Sing a morning song on this holy ground. Sing a morning song to precious life all around. Blessings. Blessings. Blessings of the morning. 
+							</h5>
+							<h4>
+								Psalm: 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+67" target = "_blank">67</a>, 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+84" target = "_blank">84</a> or 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+121" target = "_blank">121</a>
+							</h4>
+							<h4 class = "bg-warning">
+								Closing Prayer:
+							</h4>	 
+							<h5 id = "terce">
+								Generating Closing Prayer
+							</h5>
+						</div>
+					</div>
+				</div>
+
+
+				<div class = "col-md-6">
+					<div class = "panel panel-default">
+						<div class = "panel-heading text-center">
+							<h2>
+								Sext
+							</h2>
+						</div>
+						<div class = "panel-body">
+							<h2 class = "text-center">
+								The Hour of Illumination begins at 12:00 pm. 
+							</h2>
+							<br>
+							<h4>
+								Opening Prayer: 
+							</h4>
+							<h5>	
+								In this hour of noonday sun, let us bow to each other and pray for peace. Let us be the peace.<br><br>In this, the hour of noonday sun, we raise our hands to the Peaceful One. This is the hour to pray for peace, for kindness and compassion to increase. So let this be the hour of release. Let us bow to each other and pray for peace.<br><br>Let this be our promise. Let this be our song. We will be the peace for which we long. Before we share our noonday meal, our deepest hungers let us feel. This is the hour for peace to flower. Let us be the peace, let us be the peace.
+							</h5>
+							<h4>
+								Psalm: 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+24" target = "_blank">24</a>,
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+33" target = "_blank">33</a> or 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+34" target = "_blank">34</a>
+							</h4>
+							<h4>
+								Closing Prayer:
+							</h4>	 
+							<h5 id = "sext">
+								Generating Closing Prayer
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+			<!-- start new row -->
+
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-6">
+					<div class = "panel panel-primary">
+						<div class = "panel-heading text-center">
+							<h2>
+								None
+							</h2>	
+						</div>
+						<div class = "panel-body">
+							<h2 class = "text-center">
+								The Wisdom Hour begins at 3:00 pm.
+							</h2>
+							<br>
+							<h4 class = "bg-primary">
+								Opening Prayer: 
+							</h4>
+							<h5>	
+								We stand before the dying day, offering our bouquet of life. Put everything in order as day begins to fade. All things are passing, moment by moment, breath by breath. All things are passing, moment by moment, birth to death. Take off that cloak of fear, the divine strength you seek is here, and you know you are dying to live. You are dying to live. So put everything in order as day begins to fade.
+							</h5>
+							<h4>
+								Psalm: 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+71" target = "_blank">71</a>,
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+90" target = "_blank">90</a> or 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+138" target = "_blank">138</a>
+							</h4>
+							<h4 class = "bg-primary">
+								Closing Prayer:
+							</h4>	 
+							<h5 id = "none">
+								Generating Closing Prayer
+							</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "panel panel-danger">
+						<div class = "panel-heading text-center">
+							<h2>
+								Vespers
+							</h2>	
+						</div>
+						<div class = "panel-body">
+							<h2 class = "text-center">
+								The Twilight Hour begins at 7:00 pm.
+							</h2>
+							<br>
+							<h4 class = "bg-danger">
+								Opening Prayer: 
+							</h4>
+							<h5>	
+								My eyes scan the horizons of your goodness. The incense of gratitude rises as an evening prayer. A thousand colors is your face, embracing us with waves of grace, and as the day star now departs your glance of light fills all our hearts. The evening eye shines down on earth, a prayer for our continured birth. We lift our hearts in tender praise and give you thanks for all our days. 
+							</h5>
+							<h4>
+								Psalm: 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+34" target = "_blank">34</a>,
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+139" target = "_blank">139</a> or 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+145" target = "_blank">145</a>
+							</h4>
+							<h4 class = "bg-danger">
+								Closing Prayer:
+							</h4>	 
+							<h5 id = "vespers">
+								Generating Closing Prayer
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+			<!-- New Row -->			
+
+		<div class = "container">	
+			<div class = "row">
+				<div class = "col-md-6">
+					<div class = "panel panel-info">
+						<div class = "panel-heading text-center">
+							<h2>
+								Compline 
+							</h2>
+						</div>
+						<div class = "panel-body">
+							<h2 class = "text-center">
+								The Great Silence begins at 9:00 pm.
+							</h2>
+							<br>
+							<h4 class = "bg-info">
+								Opening Prayer: 
+							</h4>
+							<h5>	
+								O Holy One, in who light and shadows we have journeyed throughout this day, give us now a peaceful night and when our lives have ripened, a happy death! Let us be watchful and vigilant because the enemies of the soul prowl about looking for opportune moments to discourage us. Remember then, with confidence, the powerful and strong spiritual searchlight of faith and the magic light within. Let us place ourselves in the protective care of the angels and into the cupped hands of the Divine. Take a momemtn to let these images embrace you. Use the following Examen of Consciousness as a careful reflection of your day, or create your own:<br><br>- Have I been a good memory in anyone's life today?<br>- Have the ears of my heart opened to the voice of God?<br>- Have the ears of my heart opened to the needs of my sisters and brothers?<br>- Have the eyes of my heart beheld the Divine face in all created things?<br>- What do I know, but live as though I do not know?<br>- Have I been a good student of the hours today?<br>- How have I affected the quality of this day?<br>- Hvae I been blind or deaf to the blessing of the day?<br>- Is there anyone, including myself, whom I need to forgive?<br>- When did I experience my heart opening wide today?<br>- Have I worked with joy or drudgery?<br>-Have I waited with grace or with impatience?<br> What is the one thing in my life that is standing on tip-toe crying, 'May I have your attention please?' What needs my attention?
+							</h5>
+							<h4>
+								Psalm: 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+23" target = "_blank">23</a>,
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+91" target = "_blank">91</a> or 
+								<a href = "https://www.biblegateway.com/passage/?search=Psalm+134" target = "_blank">134</a>
+							</h4>
+							<h4 class = "bg-info">
+								Closing Prayer:
+							</h4>	 
+							<h5 id = "compline">
+								Generating Closing Prayer
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<p id="demo"></p>
+		<script type = "text/javascript" src = "clocktower.js"></script>
+</html>
+
+
+
+
+
+
+
+
